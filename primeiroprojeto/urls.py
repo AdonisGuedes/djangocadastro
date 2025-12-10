@@ -4,6 +4,7 @@ from home import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.cadastrar, name= 'home'),
     path('cadastrar/', views.cadastrar, name='cadastrar'),
     path('login/', views.login, name='login'),
 ]
